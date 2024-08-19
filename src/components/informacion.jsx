@@ -1,9 +1,9 @@
 import Teoria from "./Teoria";
 
-const informacion = (props) => {
+const informacion = ({comision, anioActual}) => {
     return (
       <article>
-        <h2>Introduccion comision: {props.comision}</h2>
+        <h2>Introduccion comision: {comision}</h2>
         <p>
           React es una biblioteca de JavaScript desarrollada por Facebook para
           construir interfaces de usuario. Se destaca por su enfoque en la
@@ -14,7 +14,7 @@ const informacion = (props) => {
           forma modular, lo que facilita el desarrollo y el mantenimiento de
           aplicaciones a gran escala.
         </p>
-        <p>Año de actualización: {props.anioActual}</p>
+        <p>Año de actualización: {anioActual}</p>
         <Teoria></Teoria>
         
       </article>
