@@ -4,12 +4,12 @@ const Contador = () => {
     const [numero, setNumero] = useState(0)
     // let numero = 0;
     
-    const sumar = ()=>{
+    // const sumar = ()=>{
     
-    setNumero(numero +1)
+    // setNumero(numero +1)
      
      
-    }
+    // }
     const restar = ()=>{
   
     setNumero(numero -1)
@@ -18,12 +18,19 @@ const Contador = () => {
     }
 
     return (
-        <section className="text-center container">
-            <h2>Practica Contador</h2>
-            <p>{numero}</p>
-            <button className="btn btn-primary" onClick={sumar}>+1</button>
-            <button className="btn btn-danger" onClick={restar}>-1</button>
-        </section>
+      <section className="text-center container">
+        <h2>Practica Contador</h2>
+        <p>{numero}</p>
+        <button
+          className="btn btn-primary"
+          onClick={() => setNumero(numero + 1)}
+        >
+          +1
+        </button>
+        <button className="btn btn-danger" onClick={restar}>
+          -1
+        </button>
+      </section>
     );
 };
 
